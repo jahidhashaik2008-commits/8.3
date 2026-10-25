@@ -1,0 +1,80 @@
+You can build a Tip Calculator app in JavaFX using Scene Builder without writing code manually. The app will let users enter a bill amount, select a tip percentage, choose the number of people, and calculate the tip and total bill.
+
+## Tip Calculator — GUI design
+
+# Tip Calculator
+
+Split the bill with ease
+
+Bill amount
+
+# $ 80.00
+
+Select tip
+
+10%
+
+15%
+
+18%
+
+20%
+
+Number of people
+
+## 2 people
+
+Tip per person
+
+# $ 6.00
+
+Total per person
+
+## $ 46.00
+
+Calculate Tip
+
+Illustrative app layout; example values only.
+
+## JavaFX components used
+
+| Component | Purpose |
+| --- | --- |
+| `Label` | Display headings and calculated results |
+| `TextField` | Enter the bill amount |
+| `RadioButton` | Select a tip percentage |
+| `ToggleGroup` | Allow one tip option at a time |
+| `Spinner` | Select the number of people |
+| `Button` | Calculate the tip and total |
+| `VBox` | Arrange components vertically |
+| `HBox` | Arrange components horizontally |
+
+## How user interactions work
+
+1. The user enters a bill amount in the `TextField`.
+2. The user selects a tip percentage using a `RadioButton`.
+3. The user chooses the number of people using a `Spinner`.
+4. When the Calculate Tip button is clicked, JavaFX responds to the button's action event.
+5. The application updates the result labels with the tip amount and total per person.
+
+## Calculation formulas
+
+$$
+\text{Tip}=\text{Bill}\times\frac{\text{Tip \%}}{100}
+$$
+
+$$
+\text{Total}=\text{Bill}+\text{Tip}
+$$
+
+$$
+\text{Per Person}=\frac{\text{Total}}{\text{People}}
+$$
+
+For example, with a bill of $80, a 15% tip, and 2 people:
+
+- Tip amount: $12
+- Total bill: $92
+- Total per person: $46
+
+Learning objective: Understand how to arrange JavaFX controls, retrieve user input, handle button-click events, and update labels dynamically.
